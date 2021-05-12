@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="myScript.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LayoutPractice</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="line"></div>
+            <div class="wrapper">
+                <div class="menu-left">
+                    <span>FOLLOW US: </span>
+                    <div class="icon icon-left">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <span class="dash">|</span>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <span class="dash">|</span>
+                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                    </div>
+                </div>
+                <div class="menu-right">
+                    <span>LOGIN/REGISTER: </span>
+                    <div class="icon icon-right">
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                        <span class="dash">|</span>
+                        <a href="#"><i class="fa fa-search"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="main">          
+            <ul class="menu">
+                <li><a href="#">HOME</a></li>
+                <span class="dash">|</span>
+                <li><a href="#" class="dropdown">PAGES</a></li>
+                <span class="dash">|</span>
+                <li><a href="#">MUSIC</a></li>
+                <span class="dash">|</span>
+                <li><a href="#">PHOTOS</a></li>
+                <span class="dash">|</span>
+                <li><a href="#">VIDEO</a></li>
+                <span class="dash">|</span>
+                <li><a href="#">NEWS</a></li>
+                <span class="dash">|</span>
+                <li><a href="#">CONTACTS</a></li>
+            </ul>
+            <div class="slide-container">
+                <span id="slider-image-1"></span>
+                <span id="slider-image-2"></span>
+                <span id="slider-image-3"></span>
+
+                <div class="image-container">
+                    <img src="./Pics/Zhongli.webp" class="slider-image image-1">
+                        <div class="text-container-1">
+                            <p><q>Beneath the light of jadeite</q></p>
+                        </div>
+        
+                    <img src="./Pics/Rosaria.jpg" class="slider-image">
+                        <div class="text-container-2">
+                            <q><span>Pray. Not for the gods,</span>
+                                <p></p>
+                                <span> nor the betterment of others</span>
+                                <p></p>
+                            <span>...but for yourself</span></q> 
+                        </div>
+
+                    <img src="./Pics/Ganyu.jpg" class="slider-image">
+                    <div class="text-container-3">
+                        <q><span>If you lie on the grass,</span>
+                            <p></p>
+                        <span>you can feel the heartbeat of the world.</span></q> 
+                    </div>
+                </div>
+                <div class="button-container">
+                    <a href="#slider-image-1" class="slider-button"></a>
+                    <a href="#slider-image-2" class="slider-button"></a>
+                    <a href="#slider-image-3" class="slider-button"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

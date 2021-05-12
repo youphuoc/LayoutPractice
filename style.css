@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+}
+
+.line {
+    height: 2px;
+    background-color: #ffd200;
+}
+
+.icon a{
+    margin: 0 10px;
+    color: white;
+}
+
+.dash {
+    font-size: 12px;
+}
+
+.wrapper {
+    color: white;
+    background-color:black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px #edcbee;
+}
+
+.wrapper .icon i:hover {
+    color: #ffd200;
+}
+
+.menu-left {
+    margin: 0 10px;
+    display: flex;
+}
+
+.menu-right {
+    margin: 0 10px;
+    display: flex;
+}
+
+.main {
+    position: relative;
+    color: orange;
+}
+
+.menu {
+    left: 34%;
+    list-style-type: none;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.menu a:hover {
+    color: #ffd200;
+}
+
+.menu a{
+    margin: 0 15px;
+    color: white;
+}
+
+.slide-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.image-container {
+    width: 300%;
+    height: 120%;
+    position: relative;
+    transition: left 1s;
+}
+
+.slider-image {
+    position: relative;
+    width: 33.333%;
+    height: inherit;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.button-container {
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+}
+
+.slider-button {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    margin: 0 4px;
+    background-color: #FFF;
+    border: 2px solid #000;
+    opacity: 0.3;
+    transition: all 0.5s;
+}
+
+#slider-image-1:target ~ .image-container {
+    left: 0;
+}
+#slider-image-2:target ~ .image-container {
+    left: -100%;
+}
+#slider-image-3:target ~ .image-container {
+    left: -200%;
+}
+
+.slider-button:hover {
+    opacity: 0.8;
+    background-color: rgb(23, 140, 235);
+}
+
+.text-container-1 {
+    font-family: Cinzel;
+    position: absolute;
+    left: 10%;
+    top: 800px;
+    font-size: 50px;
+    color: #FF0;
+    text-shadow: 3px 5px #000;
+}
+
+.text-container-2 {
+    position: absolute;
+    left: -590px;
+    width: 100%;
+    height: 100%;
+    top: 650px;
+    font-size: 50px;
+    color: rgb(151, 207, 233);
+    text-shadow: 3px 5px #000;
+}
+
+.text-container-3 {
+    position: absolute;
+    width: 31%;
+    top: 800px;
+    left: 68%;
+    font-size: 50px;
+    color: rgb(138, 232, 255);
+    text-shadow: 3px 5px #444;
+}
